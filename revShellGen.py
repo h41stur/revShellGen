@@ -453,7 +453,7 @@ def telnet(lhost):
 
 def main():
     print(banner)
-    shell = input(f'{Fore.YELLOW}>{Style.RESET_ALL} ')
+    shell = input(f'{Fore.YELLOW}option>{Style.RESET_ALL} ')
     lhost = input(f'{Fore.YELLOW}LHOST>{Style.RESET_ALL} ')
     lport = input(f'{Fore.YELLOW}LPORT>{Style.RESET_ALL} ')
     if shell == '1' or shell == '01':
