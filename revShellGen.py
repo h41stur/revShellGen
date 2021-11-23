@@ -14,7 +14,7 @@ banner = f'''{Fore.YELLOW}
 References:
     https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
 
-{Fore.YELLOW}What kind of shell do you want to generate?{Style.RESET_ALL}
+{Fore.YELLOW}What kind of reverse shell do you want to generate?{Style.RESET_ALL}
 
 [{Fore.GREEN}01{Style.RESET_ALL}] AWK                            [{Fore.GREEN}12{Style.RESET_ALL}] Netcat BusyBox
 [{Fore.GREEN}02{Style.RESET_ALL}] Bash TCP                       [{Fore.GREEN}13{Style.RESET_ALL}] Netcat Traditional
