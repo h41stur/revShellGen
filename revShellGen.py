@@ -500,6 +500,9 @@ def main():
         socat(lhost, lport)
     elif shell == '22':
         telnet(lhost)
+    else:
+        print(f'\n[{Fore.RED}-{Style.RESET_ALL}] Invalid option!')
+        sys.exit()
         
 
 if __name__ == '__main__':
